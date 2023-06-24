@@ -1,0 +1,26 @@
+body {
+    color: $text-color;
+    background-color: $bg-primary;
+    font-family: $font-primary;
+}
+
+.container {
+    max-width: 1170px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+
+.btn {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 146%;
+    border-radius: 90px;
+    padding: 13px 17px;
+    display: inline-flex;
+    align-items: center;
+    letter-spacing: 0.6px;
+}
