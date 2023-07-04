@@ -36,7 +36,42 @@
             justify-content: center;
         }
     }
-
+    .first-screen {
+        .container {
+            padding: 0 28px;
+            text-align: center;
+            z-index: 1;
+        }
+        .container-xxl {
+            min-height: calc(100vh - 74px);
+            position: relative;
+            
+            &::after {
+                content: "";
+                position: absolute;
+                background-color: rgba(0, 0, 0, 0.363);
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+            }
+        }
+        &-slider__title {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+        &-slider__subtitle {
+            font-size: 16px;
+            margin-bottom: 18px;
+        }
+        .btn-lg {
+            white-space: nowrap;
+            .icon {
+                margin: 0 -14px 0 35px;
+            }
+        }
+        
+    }
 }
 
 

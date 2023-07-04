@@ -9,7 +9,7 @@
     position: relative;
 
     &-slider__title {
-        max-width: 473px;
+        
         font-size: 56px;
         font-weight: 700;
         line-height: 126%;
@@ -18,7 +18,7 @@
     }
 
     &-slider__subtitle {
-        max-width: 345px;
+        
         font-size: 20px;
         font-weight: 300;
         line-height: 135.5%;
@@ -27,24 +27,28 @@
 
     &-slider__arrows {
         position: absolute;
-        max-width: 1570px;
+        max-width: 1670px;
         display: flex;
         width: 100%;
         justify-content: space-between;
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
+        padding: 0 50px;
     }
     .container {
       margin-bottom: 64px;
     }
 
     .container-xxl {
-      max-width: 1820px;
+      max-width: 1840px;
       min-height: 700px;
       display: flex;
       align-items: center;
-      border-radius: 20px;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      margin: 0;
     }
     .slick-dots {
       position: absolute;
