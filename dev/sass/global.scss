@@ -353,6 +353,147 @@ h6, .h6 {
     }
 }
 
-// section {
+.template-title {
+    text-align: center;
+    color: #FFFFFF;
+    position: relative;
+    padding-bottom: 18px;
+    margin-bottom: 50px;
+
+    h2 {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 124.5%;
+        text-transform: uppercase;
+        margin-bottom: 6px;
+    }
+
+    h3 {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 1.25;
+    }
+
+    &:after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: calc(100% - 2px);
+        transform: translate(-50%, 0);
+        width: 85px;
+        height: 2px;
+        background-color: $color-secondary;
+    }
+
+    /*type 2*/
+    &.text-left,
+    &.col-lg-7 {
+        text-align: left;
+
+        &:after {
+            left: 0;
+            transform: none;
+            background-color: $color-primary;
+        }
+    }
+
+    /*type 3*/
+    &.col-lg-7 {
+        margin-bottom: 35px;
+        
+        h2 {
+            
+            &:after {
+                content: "";
+                position: static;
+                display: inline-block;
+                width: 85px;
+                height: 2px;
+                margin: 10px 10px 10px 19px;
+                background-color: $color-secondary;
+            }
+        }
+
+        &:after {
+            display: none;
+
+        }
+    }
+
+
+}
+
+.input-row {
+    display: flex;
+}
+
+.input-column {
+    width: 100%;
+}
+
+.input-box {
+    margin-bottom: 17px;
+    display: flex;
+    flex-direction: column;
     
-// }
+    input {
+        border-radius: 10px;
+        padding: 16px 10px;
+        border: none;
+        &:focus-visible {
+            outline: none;
+        }
+    }
+
+    label {
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 126%;
+        margin-bottom: 6px;
+    }
+}
+
+.padding-top {
+    padding-top: 18px; /*для .input-column*/
+}
+
+.has-checkbox {
+    margin-bottom: 6px;  /*для .input-box*/
+}
+
+
+// ???
+section {
+    margin: 0 auto $section-margin-lg;
+    max-width: 1920px;
+
+    &:last-of-type {
+        margin-bottom: 56px;
+    }
+
+    &.container-fluid {
+
+        padding: 90px 85px 100px;
+        position: relative;
+
+        &:before {
+            content: "";
+            position: absolute;
+            left: 42px;
+            right: 42px;
+            top: 0;
+            height: 100%;
+            background-color: $bg-secondary;
+            border-radius: 20px;
+            z-index: -1;
+        }
+    }
+
+    &:nth-child(odd) {
+        .template-title {
+            &:after {
+                background-color: $color-primary;
+            }
+        }
+    }
+}
