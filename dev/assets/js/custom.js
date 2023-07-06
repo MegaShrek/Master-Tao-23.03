@@ -23,7 +23,7 @@ const checkbox = document.querySelectorAll('[type="checkbox"]')
 
 checkbox.forEach(item => {
   item.closest('.input-box').classList.add('has-checkbox')
-  item.closest('.input-column').classList.add('padding-top')
+  item.closest('.input-column').classList.add('padding')
 })
 
 document.getElementById('photo').onchange = function () {

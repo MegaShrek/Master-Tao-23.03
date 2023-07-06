@@ -1,3 +1,22 @@
 @media screen and (max-width: 767px) {
-
+    .calculation-form {
+        padding: 52px 15px 15px;
+        margin-left: initial;
+        #file-name {
+            margin: 0 0 12px;
+        }
+        .btn {
+            min-width: 100%;
+            .icon {
+                margin: 0 -14px 0 auto;
+            }
+        }
+    }
+    .input-row {
+        flex-direction: column;
+    }
+    .padding {
+        padding-top: 7px;
+        padding-bottom: 5px;
+    }
 }

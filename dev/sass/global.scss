@@ -136,11 +136,11 @@ h6, .h6 {
 }
 
 .btn-lg {
-    padding: 22px 33px;
+    padding: 19px 33px;
     font-size: 16px;
 
     .icon {
-        margin: 0 0 0 49px;
+        margin: 0 -14px 0 49px;
         width: 27px;
         height: 27px;
         transition: .3s;
@@ -385,17 +385,7 @@ h6, .h6 {
         background-color: $color-secondary;
     }
 
-    /*type 2*/
-    &.text-left,
-    &.col-lg-7 {
-        text-align: left;
-
-        &:after {
-            left: 0;
-            transform: none;
-            background-color: $color-primary;
-        }
-    }
+    
 
     /*type 3*/
     &.col-lg-7 {
@@ -453,8 +443,8 @@ h6, .h6 {
     }
 }
 
-.padding-top {
-    padding-top: 18px; /*для .input-column*/
+.padding {
+    padding-top: 21px; /*для .input-column*/
 }
 
 .has-checkbox {
