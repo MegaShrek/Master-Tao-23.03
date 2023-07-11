@@ -4,7 +4,7 @@
     }
     .calculation__img-box {
         position: absolute;
-        bottom: -100px;
+        bottom: -115px;
         right: -18px; 
     }
     &__img {
@@ -29,6 +29,12 @@
                 display: flex;
                 align-items: center;
             }
+        }
+        input::placeholder {
+            color: #CBCBCB;
+            font-size: 15px;
+            line-height: 126%;
+            padding: 19px 10px 18px;
         }
     }
 
