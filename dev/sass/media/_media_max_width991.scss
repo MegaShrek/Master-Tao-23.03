@@ -1,11 +1,29 @@
 @media screen and (max-width: 991px) {
     section {
         margin-bottom: $section-margin;
+        &.container-fluid {
+            padding: 55px 20px 60px;
+            position: relative;
+
+            &:before {
+                left: 0;
+                right: 0;
+            }
+
+            > .container {
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
     }
-    
+
     .container {
         padding-left: 20px;
         padding-right: 20px;
+    }
+    .row {
+        margin-left: -20px;
+        margin-right: -20px;
     }
     .navbar {
         padding-top: 16px;
@@ -84,6 +102,7 @@
         }
     }
     .template-title {
+        margin-bottom: 35px;
         h2 {
             font-size: 24px;
             font-weight: 700;
@@ -104,6 +123,25 @@
             }
         } 
     }
+
+    .advantages {
+        .slick-slider {
+            padding-top: 10px;
+        }
+        .slick-dots {
+            margin-bottom: 60px;
+        }
+    }
+
+    .advantage {
+        padding: 0 20px;
+        margin-bottom: 25px;
+    }
+
+    // .col-lg-3:nth-child(n+2)  {
+    //     margin-top: 48px;
+    // }
+    
 }
 
 
