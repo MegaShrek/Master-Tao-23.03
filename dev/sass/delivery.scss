@@ -1,0 +1,42 @@
+.slide-box {
+    background-color: $bg-secondary;
+    margin: 0 15px;
+    padding: 0 20px 27px;
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.slide-img-box {
+    margin: 0 -20px 27px;
+}
+
+.slide-title {
+    font-size: 22px;
+    line-height: 124.5%;
+    margin-bottom: 11px;
+}
+
+.slide-options {
+    display: flex;
+    justify-content: center;
+}
+
+.option-item {
+    line-height: 124.5%;
+    margin: 0 14px 13px;
+}
+
+.icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+}
+
+// .icon-calendar {
+
+// }
+
+// .icon-weight {
+
+// }
